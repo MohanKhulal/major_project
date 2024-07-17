@@ -91,7 +91,7 @@
                     <a href="https://blog.laravel.com">Order</a>
                     <a href="https://nova.laravel.com">Payment</a>
                     <a href="https://forge.laravel.com">About Us</a>
-                    <a href="https://github.com/laravel/laravel">Log Out</a>
+                    <a href="https://github.com/laravel/laravel">log out</a>
                 </div>
             </div>
         </div>
