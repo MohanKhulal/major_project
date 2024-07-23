@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/mohan', function(){
+    echo"Hello Mohan Khulal";
+})->name('login');
+
+Route::get('/khulal', function(){
+    echo "Hello Mohan Khulal, how are you";
+})->name ('loginout');
+
+Route::get('/table','Mohancontroller@table')->name ('loginout');
+

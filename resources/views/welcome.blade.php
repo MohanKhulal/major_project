@@ -62,15 +62,32 @@
                 margin-bottom: 30px;
             }
         </style>
+        
     </head>
     <body>
+        
+   
+
+
+
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                    <div class="links">
+                    <a href="{{ route('login')}}">Home</a>
+                    <a href="{{ route('loginout')}}">Categories</a>
+                    <a href="https://laravel-news.com">Help Center</a>
+                    <a href="https://blog.laravel.com">Order</a>
+                    <a href="https://nova.laravel.com">Payment</a>
+                    <a href="https://forge.laravel.com">contact Us</a>
+                    <a href="https://github.com/laravel/laravel">log out</a>
+                    <a href="{{ route('login') }}">Login</a>
+                </div>
+                       
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
@@ -84,15 +101,6 @@
                     Laravel
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Home</a>
-                    <a href="https://laracasts.com">Categories</a>
-                    <a href="https://laravel-news.com">Help Center</a>
-                    <a href="https://blog.laravel.com">Order</a>
-                    <a href="https://nova.laravel.com">Payment</a>
-                    <a href="https://forge.laravel.com">contact Us</a>
-                    <a href="https://github.com/laravel/laravel">log out</a>
-                </div>
             </div>
         </div>
     </body>
